@@ -11,6 +11,10 @@ set tabstop=3
 syntax on
 set nocompatible
 
+set ts=4 sw=4 et
+let g:indent_guides_start_level = 2
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_guide_size=1
 filetype indent on
 filetype on
 filetype plugin on
@@ -19,6 +23,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 " vim-airline
+Plugin 'nathanaelkane/vim-indent-guides'
+
 "VundleVim/Vundle.vim
 Plugin 'gmarik/Vundle.vim'
 "After install YouCompleteMe

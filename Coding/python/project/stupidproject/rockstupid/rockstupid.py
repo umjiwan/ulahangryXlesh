@@ -26,19 +26,14 @@ def choice():
     print("2. No")
     print("")
     time.sleep(1)
-    
     choice_nu = int(input("숫자만 입력해줘 : "))
     print("")
-
     if choice_nu == 1:
-        rockstupid()
-        
+        rockstupid()   
     elif choice_nu == 2:
-        rocksmart()
-    
+        rocksmart()    
     else:
         print("Error 숫자만 입력해")
-
 start()
 
 
