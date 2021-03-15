@@ -279,28 +279,35 @@ def password():
     password_str = input("")
     password_str_len = len(password_str)
     password_str_list = list(password_str[0:password_str_len])
-    print(password_str)
-    print(password_str_len)
-    print(password_str_list)
-    
-    if password_str_list[0] == "a":
-        random_nu = random.randint(1, 10)
-        
-        if random_nu == 1:
-            one_letter
-
-
-
-
-print("무엇을 하시겠습니까?")
-print("----------------------")
-print("1. 암호화")
-print("2. 복호화")
-print("----------------------")
-choice = int(input("숫자만 입력 : "))
-
-if choice == 1:
-    print("암호화 프로그램 시작")
     print("")
-    password()
+    print(f"문자 : {password_str}")
+    print(f"자릿수 : {password_str_len}")
+    print(f"리스트 : {password_str_list}")
+    print("")
+    
+    print(type(password_str_len))
+    
 
+    #while int(password_str_len) == start_nu:
+     #   print("안녕")
+      #  start_nu += 1
+        
+
+
+
+def start():
+    print("무엇을 하시겠습니까?")
+    print("----------------------")
+    print("1. 암호화")
+    print("2. 복호화")
+    print("----------------------")
+    choice = int(input("숫자만 입력 : "))
+
+    if choice == 1:
+        print("암호화 프로그램 시작")
+        print("")
+        password()
+
+print("start")
+print("")
+start()
